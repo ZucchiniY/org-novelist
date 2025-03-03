@@ -62,206 +62,206 @@
 (defconst orgn--author-not-set-zh-CN "未指定作者" "用户未指定作者.")
 (defconst orgn--author-email-not-set-zh-CN "未设定邮箱" "用户未设定邮件.")
 ;; File Instructions
-(defconst orgn--main-file-instructions-zh-CN "故事摘要" "主文件入口.")
-(defconst orgn--notes-file-instructions-zh-CN "故事要点" "一般文件说明.")
-(defconst orgn--research-file-instructions-zh-CN "故事研究笔记" "一般研究文件说明.")
-(defconst orgn--characters-file-instructions-zh-CN "故事中人物的索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "角色索引文件.")
-(defconst orgn--places-file-instructions-zh-CN "故事中地点的索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "地点索引文件.")
-(defconst orgn--props-file-instructions-zh-CN "故事中的道具索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "道具索引文件.")
-(defconst orgn--chapters-file-instructions-zh-CN "故事中的章节索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "章节索引文件.")
-(defconst orgn--linked-stories-file-instructions-zh-CN "故事中的链接索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "故事链接索引文件.")
+(defconst orgn--main-file-instructions-zh-CN "故事摘要" "主入口文件说明.")
+(defconst orgn--notes-file-instructions-zh-CN "通用笔记" "通用笔记文件说明.")
+(defconst orgn--research-file-instructions-zh-CN "故事研究笔记" "通用研究笔记说明.")
+(defconst orgn--characters-file-instructions-zh-CN "故事中角色的索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "角色索引文件说明.")
+(defconst orgn--places-file-instructions-zh-CN "故事中地点的索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "地点索引文件说明.")
+(defconst orgn--props-file-instructions-zh-CN "故事中的道具索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "道具索引文件说明.")
+(defconst orgn--chapters-file-instructions-zh-CN "故事中的章节索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "章节索引文件说明.")
+(defconst orgn--linked-stories-file-instructions-zh-CN "故事中的链接索引。请勿手动编辑。仅作为 Org mode or Org Novelist 方法" "链接故事索引文件说明.")
 ;; Folder Names
 (defconst orgn--notes-folder-zh-CN "笔记" "故事笔记目录.")
 (defconst orgn--indices-folder-zh-CN "索引" "故事索引目录.")
 (defconst orgn--chapters-folder-zh-CN "章节" "故事章节目录.")
 (defconst orgn--exports-folder-zh-CN "导出" "故事导出目录.")
 ;; File Names
-(defconst orgn--main-file-zh-CN "主文件" "故事主文件.")
-(defconst orgn--notes-file-zh-CN "笔记" "一般摘要文件.")
-(defconst orgn--research-file-zh-CN "研究" "一般研究文件.")
-(defconst orgn--characters-file-zh-CN "角色" "角色索引文件.")
-(defconst orgn--places-file-zh-CN "places" "Name for the story's location index file.")
-(defconst orgn--props-file-zh-CN "props" "Name for the story's prop index file.")
-(defconst orgn--chapters-file-zh-CN "chapters" "Name for the story's chapter index file.")
-(defconst orgn--linked-stories-file-zh-CN "linked-stories" "Name for the story's linked stories index file.")
-(defconst orgn--chapter-file-prefix-zh-CN "chapter-" "Prefix for the story's chapter files.")
-(defconst orgn--notes-suffix-zh-CN "-notes" "Suffix for a file's associated notes file.")
-(defconst orgn--character-file-prefix-zh-CN "character-" "Prefix for the story's character files.")
-(defconst orgn--prop-file-prefix-zh-CN "prop-" "Prefix for the story's prop files.")
-(defconst orgn--place-file-prefix-zh-CN "place-" "Prefix for the story's place files.")
-;; File Titles
-(defconst orgn--notes-title-zh-CN "Notes" "Name for the story's general notes title.")
-(defconst orgn--research-title-zh-CN "Research" "Name for the story's general research title.")
-(defconst orgn--characters-title-zh-CN "Characters" "Name for the story's character index title.")
-(defconst orgn--places-title-zh-CN "Places" "Name for the story's location index title.")
-(defconst orgn--props-title-zh-CN "Props" "Name for the story's prop index title.")
-(defconst orgn--chapters-title-zh-CN "Chapters" "Name for the story's chapter index title.")
-(defconst orgn--config-name-zh-CN "Export Settings" "Display name for a link to the story's configuration file.")
-(defconst orgn--linked-stories-title-zh-CN "Linked Stories" "Name for the story's linked stories index title.")
-;; File Preambles
-(defconst orgn--story-name-zh-CN "story name" "Placeholder for the name of the story, used in generating template preambles.")
-(defconst orgn--chapter-name-zh-CN "chapter name" "Placeholder for the name of a chapter, used in generating template preambles.")
-;; <<story name>> (without the << >> brackets) must share the same value as org-novelist--story-name-zh-CN.
-;; <<chapter name>> (without the << >> brackets) must share the same value as org-novelist--chapter-name-zh-CN.
-(defconst orgn--notes-for-story-name-zh-CN "Notes for <<story name>>" "Part of the preamble for the general notes file.")
-(defconst orgn--notes-for-chapter-name-zh-CN "Notes for <<chapter name>>" "Part of the preamble for the chapter notes file.")
-(defconst orgn--research-for-story-name-zh-CN "Research for <<story name>>" "Part of the preamble for the general research file.")
-(defconst orgn--character-index-for-story-name-zh-CN "Character Index for <<story name>>" "Part of the preamble for the character index file.")
-(defconst orgn--place-index-for-story-name-zh-CN "Place Index for <<story name>>" "Part of the preamble for the location index file.")
-(defconst orgn--prop-index-for-story-name-zh-CN "Prop Index for <<story name>>" "Part of the preamble for the prop index file.")
-(defconst orgn--chapter-index-for-story-name-zh-CN "Chapter Index for <<story name>>" "Part of the preamble for the chapter index file.")
-(defconst orgn--linked-stories-index-for-story-name-zh-CN "Linked Stories Index for <<story name>>" "Part of the preamble for the linked stories index file.")
-(defconst orgn--front-matter-heading-zh-CN "Front Matter" "Name for the Front Matter of the book chapters, used as a heading.")
-(defconst orgn--main-matter-heading-zh-CN "Main Matter" "Name for the Main Matter of the book chapters, used as a heading.")
-(defconst orgn--back-matter-heading-zh-CN "Back Matter" "Name for the Back Matter of the book chapters, used as a heading.")
-(defconst orgn--notes-zh-CN "Notes" "Part of the preamble for a chapter file.")
-(defconst orgn--chapter-zh-CN "chapter" "Part of the preamble for a chapter file.")
-(defconst orgn--character-zh-CN "character" "Part of the preamble for a character file.")
-(defconst orgn--prop-zh-CN "prop" "Part of the preamble for a prop file.")
-(defconst orgn--place-zh-CN "place" "Part of the preamble for a place file.")
-(defconst orgn--character-name-zh-CN "character name" "Placeholder for the name of a character, used in generating template preambles.")
-(defconst orgn--prop-name-zh-CN "prop name" "Placeholder for the name of a prop, used in generating template preambles.")
-(defconst orgn--place-name-zh-CN "place name" "Placeholder for the name of a place, used in generating template preambles.")
-;; <<Notes>> (without the << >> brackets) must share the same value as org-novelist--notes-zh-CN.
-;; <<chapter>> (without the << >> brackets) must share the same value as org-novelist--chapter-zh-CN.
-;; <<story name>> (without the << >> brackets) must share the same value as org-novelist--story-name-zh-CN.
-;; <<chapter name>> (without the << >> brackets) must share the same value as org-novelist--chapter-name-zh-CN.
-;; <<character name>> (without the << >> brackets) must share the same value as org-novelist--character-name-zh-CN.
-;; <<character>> (without the << >> brackets) must share the same value as org-novelist--character-zh-CN.
-;; <<prop name>> (without the << >> brackets) must share the same value as org-novelist--prop-name-zh-CN.
-;; <<prop>> (without the << >> brackets) must share the same value as org-novelist--prop-zh-CN.
-;; <<place name>> (without the << >> brackets) must share the same value as org-novelist--place-name-zh-CN.
-;; <<place>> (without the << >> brackets) must share the same value as org-novelist--place-zh-CN.
-(defconst orgn--notes-are-available-for-this-chapter-from-story-name-zh-CN "<<Notes>> are available for this <<chapter>> from <<story name>>." "Sentence describing chapter notes availability.")
-(defconst orgn--notes-for-chapter-name-a-chapter-from-story-name-zh-CN "Notes for <<chapter name>>, a <<chapter>> from <<story name>>." "Sentence header for chapter notes template.")
-(defconst orgn--notes-for-character-name-a-character-from-story-name-zh-CN "Notes for <<character name>>, a <<character>> from <<story name>>." "Sentence header for character notes template.")
-(defconst orgn--notes-for-prop-name-a-prop-from-story-name-zh-CN "Notes for <<prop name>>, a <<prop>> from <<story name>>." "Sentence header for prop notes template.")
-(defconst orgn--notes-for-place-name-a-place-from-story-name-zh-CN "Notes for <<place name>>, a <<place>> from <<story name>>." "Sentence header for place notes template.")
-(defconst orgn--content-header-zh-CN "Content" "Part of the preamble for a chapter file.")
-(defconst orgn--scene-name-here-zh-CN "Scene Name Here" "Part of the preamble for a chapter file.")
-(defconst orgn--glossary-header-zh-CN "Glossary" "Part of the writing glossary in chapter files.")
-(defconst orgn--view-notes-zh-CN "View Notes" "A link text to let the user view related notes.")
-(defconst orgn--new-name-zh-CN "New name" "Placeholder for the new name in an alias string.")
-(defconst orgn--old-name-zh-CN "old name" "Placeholder for the old name in an alias string.")
-;; <<New name>> (without the << >> brackets) must share the same value as org-novelist--new-name-zh-CN.
-;; <<old name>> (without the << >> brackets) must share the same value as org-novelist--old-name-zh-CN.
-(defconst orgn--new-name-is-an-alias-for-old-name-zh-CN "<<New name>> is an alias for <<old name>>." "Text to let the user know something is an alias.")
-(defconst orgn--appearances-in-chapters-header-zh-CN "Appearances in Chapters" "Part of the references section in notes files.")
-(defconst orgn--line-zh-CN "Line" "The word for the line of a chapter. Used at the start of a sentence.")
-(defconst orgn--not-yet-referenced-zh-CN "Not yet referenced in story." "Display that an object has not yet been mentioned in any of the chapter files.")
-(defconst orgn--exports-header-zh-CN "Exports" "Heading for configuration file to use to list export templates.")
-;; File Content
+(defconst orgn--main-file-zh-CN "main" "故事主入口文件名索引文件名.")
+(defconst orgn--notes-file-zh-CN "notes" "通用笔记文件名索引文件名.")
+(defconst orgn--research-file-zh-CN "research" "通用研究文件名索引文件名.")
+(defconst orgn--characters-file-zh-CN "characters" "角色名索引文件名.")
+(defconst orgn--places-file-zh-CN "places" "地址名索引文件名.")
+(defconst orgn--props-file-zh-CN "props" "道具名索引文件名.")
+(defconst orgn--chapters-file-zh-CN "chapters" "章节名索引文件名.")
+(defconst orgn--linked-stories-file-zh-CN "linked-stories" "链接故事名索引文件名.")
+(defconst orgn--chapter-file-prefix-zh-CN "章节-" "故事章节文件的前缀.")
+(defconst orgn--notes-suffix-zh-CN "-笔记" "文件关联笔记文件的后缀.")
+(defconst orgn--character-file-prefix-zh-CN "角色-" "故事角色文件的前缀.")
+(defconst orgn--prop-file-prefix-zh-CN "道具-" "故事道具文件的前缀.")
+(defconst orgn--place-file-prefix-zh-CN "地点-" "故事地点文件的前缀.")
+;; 文件标题
+(defconst orgn--notes-title-zh-CN "笔记" "故事通用笔记的标题名称.")
+(defconst orgn--research-title-zh-CN "研究" "故事通用研究的标题名称.")
+(defconst orgn--characters-title-zh-CN "角色" "故事角色索引的标题名称.")
+(defconst orgn--places-title-zh-CN "地点" "故事地点索引的标题名称.")
+(defconst orgn--props-title-zh-CN "道具" "故事道具索引的标题名称.")
+(defconst orgn--chapters-title-zh-CN "章节" "故事章节索引的标题名称.")
+(defconst orgn--config-name-zh-CN "导出设置" "故事配置文件链接的显示名称.")
+(defconst orgn--linked-stories-title-zh-CN "链接的故事" "故事链接故事索引的标题名称.")
+;; 文件前言
+(defconst orgn--story-name-zh-CN "故事名称" "故事名称的占位符，用于生成模板前言.")
+(defconst orgn--chapter-name-zh-CN "章节名称" "章节名称的占位符，用于生成模板前言.")
+;; <<story name>>（不带<< >>括号）必须与org-novelist--story-name-zh-CN的值相同.
+;; <<chapter name>>（不带<< >>括号）必须与org-novelist--chapter-name-zh-CN的值相同.
+(defconst orgn--notes-for-story-name-zh-CN "<<story name>>的笔记" "通用笔记文件前言的一部分.")
+(defconst orgn--notes-for-chapter-name-zh-CN "<<chapter name>>的笔记" "章节笔记文件前言的一部分.")
+(defconst orgn--research-for-story-name-zh-CN "<<story name>>的研究" "通用研究文件前言的一部分.")
+(defconst orgn--character-index-for-story-name-zh-CN "<<story name>>的角色索引" "角色索引文件前言的一部分.")
+(defconst orgn--place-index-for-story-name-zh-CN "<<story name>>的地点索引" "地点索引文件前言的一部分.")
+(defconst orgn--prop-index-for-story-name-zh-CN "<<story name>>的道具索引" "道具索引文件前言的一部分.")
+(defconst orgn--chapter-index-for-story-name-zh-CN "<<story name>>的章节索引" "章节索引文件前言的一部分.")
+(defconst orgn--linked-stories-index-for-story-name-zh-CN "<<story name>>的链接故事索引" "链接故事索引文件前言的一部分.")
+(defconst orgn--front-matter-heading-zh-CN "前言" "书籍章节的前言名称，用作标题.")
+(defconst orgn--main-matter-heading-zh-CN "正文" "书籍章节的正文名称，用作标题.")
+(defconst orgn--back-matter-heading-zh-CN "后记" "书籍章节的后记名称，用作标题.")
+(defconst orgn--notes-zh-CN "笔记" "章节文件前言的一部分.")
+(defconst orgn--chapter-zh-CN "章节" "章节文件前言的一部分.")
+(defconst orgn--character-zh-CN "角色" "角色文件前言的一部分.")
+(defconst orgn--prop-zh-CN "道具" "道具文件前言的一部分.")
+(defconst orgn--place-zh-CN "地点" "地点文件前言的一部分.")
+(defconst orgn--character-name-zh-CN "角色名称" "角色名称的占位符，用于生成模板前言.")
+(defconst orgn--prop-name-zh-CN "道具名称" "道具名称的占位符，用于生成模板前言.")
+(defconst orgn--place-name-zh-CN "地点名称" "地点名称的占位符，用于生成模板前言.")
+;; <<Notes>>（不带<< >>括号）必须与org-novelist--notes-zh-CN的值相同.
+;; <<chapter>>（不带<< >>括号）必须与org-novelist--chapter-zh-CN的值相同.
+;; <<story name>>（不带<< >>括号）必须与org-novelist--story-name-zh-CN的值相同.
+;; <<chapter name>>（不带<< >>括号）必须与org-novelist--chapter-name-zh-CN的值相同.
+;; <<character name>>（不带<< >>括号）必须与org-novelist--character-name-zh-CN的值相同.
+;; <<character>>（不带<< >>括号）必须与org-novelist--character-zh-CN的值相同.
+;; <<prop name>>（不带<< >>括号）必须与org-novelist--prop-name-zh-CN的值相同.
+;; <<prop>>（不带<< >>括号）必须与org-novelist--prop-zh-CN的值相同.
+;; <<place name>>（不带<< >>括号）必须与org-novelist--place-name-zh-CN的值相同.
+;; <<place>>（不带<< >>括号）必须与org-novelist--place-zh-CN的值相同.
+(defconst orgn--notes-are-available-for-this-chapter-from-story-name-zh-CN "<<Notes>>可用于<<story name>>中的<<chapter>>." "描述章节笔记可用性的句子.")
+(defconst orgn--notes-for-chapter-name-a-chapter-from-story-name-zh-CN "<<chapter name>>的笔记，<<story name>>中的<<chapter>>." "章节笔记模板的句子标题.")
+(defconst orgn--notes-for-character-name-a-character-from-story-name-zh-CN "<<character name>>的笔记，<<story name>>中的<<character>>." "角色笔记模板的句子标题.")
+(defconst orgn--notes-for-prop-name-a-prop-from-story-name-zh-CN "<<prop name>>的笔记，<<story name>>中的<<prop>>." "道具笔记模板的句子标题.")
+(defconst orgn--notes-for-place-name-a-place-from-story-name-zh-CN "<<place name>>的笔记，<<story name>>中的<<place>>." "地点笔记模板的句子标题.")
+(defconst orgn--content-header-zh-CN "内容" "章节文件前言的一部分.")
+(defconst orgn--scene-name-here-zh-CN "场景名称" "章节文件前言的一部分.")
+(defconst orgn--glossary-header-zh-CN "术语表" "章节文件中写作术语表的一部分.")
+(defconst orgn--view-notes-zh-CN "查看笔记" "让用户查看相关笔记的链接文本.")
+(defconst orgn--new-name-zh-CN "新名称" "别名字符串中新名称的占位符.")
+(defconst orgn--old-name-zh-CN "旧名称" "别名字符串中旧名称的占位符.")
+;; <<New name>>（不带<< >>括号）必须与org-novelist--new-name-zh-CN的值相同.
+;; <<old name>>（不带<< >>括号）必须与org-novelist--old-name-zh-CN的值相同.
+(defconst orgn--new-name-is-an-alias-for-old-name-zh-CN "<<New name>>是<<old name>>的别名." "让用户知道某物是别名的文本.")
+(defconst orgn--appearances-in-chapters-header-zh-CN "章节中的出现" "笔记文件引用部分的一部分.")
+(defconst orgn--line-zh-CN "行" "章节行的单词.用于句子的开头.")
+(defconst orgn--not-yet-referenced-zh-CN "尚未在故事中引用." "显示对象尚未在任何章节文件中提及.")
+(defconst orgn--exports-header-zh-CN "导出" "配置文件的标题，用于列出导出模板.")
+;; 文件内容
 (defconst orgn--chapter-notes-content-zh-CN
   (concat
-   "Show how this chapter contributes to:\n"
-   "** Character Development\n"
-   "** Moving the Plot Forward\n"
-   "** Enriching the Setting\n")
-  "Starter content for the chapter notes files.")
+   "展示本章如何贡献于：\n"
+   "** 角色发展\n"
+   "** 推动情节\n"
+   "** 丰富背景\n")
+  "章节笔记文件的起始内容.")
 (defconst orgn--character-notes-content-zh-CN
   (concat
-   "** Role in Story\n"
-   "** What Does This Character Want?\n"
-   "** What Would Most Motivate This Character Into Taking Action?\n"
-   "** What Would Most Prevent This Character From Taking Action?\n"
-   "** What Is The Worst Thing That Could Happen To This Character?\n"
-   "** What Is The Best Thing That Could Happen To This Character?\n"
-   "** Who or What Is Stopping This Character From Getting What They Want?\n"
-   "** What Does This Character Need To Learn In Order To Be Happy?\n"
-   "** Occupation\n"
-   "** Physical Description\n"
-   "** Personality\n"
-   "** Habits/Mannerisms\n"
-   "** Background\n"
-   "** Internal Conflicts\n"
-   "** External Conflicts\n"
-   "** Notes\n")
-  "Starter content for the character notes files.")
+   "** 在故事中的角色\n"
+   "** 这个角色想要什么？\n"
+   "** 什么最能激励这个角色采取行动？\n"
+   "** 什么最能阻止这个角色采取行动？\n"
+   "** 这个角色可能发生的最糟糕的事情是什么？\n"
+   "** 这个角色可能发生的最好的事情是什么？\n"
+   "** 谁或什么阻止了这个角色得到他们想要的东西？\n"
+   "** 这个角色需要学习什么才能快乐？\n"
+   "** 职业\n"
+   "** 外貌描述\n"
+   "** 性格\n"
+   "** 习惯/举止\n"
+   "** 背景\n"
+   "** 内部冲突\n"
+   "** 外部冲突\n"
+   "** 笔记\n")
+  "角色笔记文件的起始内容.")
 (defconst orgn--prop-notes-content-zh-CN
   (concat
-   "** Role in Story\n"
-   "** Description\n"
-   "** Background\n"
-   "** Notes\n")
-  "Starter content for the prop notes files.")
+   "** 在故事中的角色\n"
+   "** 描述\n"
+   "** 背景\n"
+   "** 笔记\n")
+  "道具笔记文件的起始内容.")
 (defconst orgn--place-notes-content-zh-CN
   (concat
-   "** Role in Story\n"
-   "** Description\n"
-   "** Background\n"
-   "** Related Characters\n"
-   "** Season\n"
-   "** Unique Features\n"
-   "** Sights\n"
-   "** Sounds\n"
-   "** Smells\n"
-   "** Notes\n")
-  "Starter content for the place notes files.")
-(defconst orgn--alias-zh-CN "Alias" "Alias section announcement for glossaries.")
-(defconst orgn--glossary-default-character-desc-zh-CN "A character in the story." "The default description in the index for a character in the story.")
-(defconst orgn--glossary-default-place-desc-zh-CN "A place in the story." "The default description in the index for a place in the story.")
-(defconst orgn--glossary-default-prop-desc-zh-CN "A prop in the story." "The default description in the index for a prop in the story.")
-;; User Queries
-(defconst orgn--story-name-query-zh-CN "Story Name?" "A query to the user for what to name their story.")
-(defconst orgn--story-save-location-query-zh-CN "Story Save Location?" "A query to the user for where to save their story.")
-(defconst orgn--chapter-name-query-zh-CN "Chapter Name?" "A query to the user for the name of a chapter.")
-(defconst orgn--chapter-location-query-zh-CN "Choose Chapter Location From Available Options for \"%s\" (%s/%s/%s):" "A query to the user for what section in which to place a new chapter.")
-(defconst orgn--rebuild-chapter-index-location-query-zh-CN "Rebuilding index: Where should chapters go?" "When rebuilding chapter index, ask user where to place chapters.")
-(defconst orgn--file-by-file-zh-CN "Select individually for each file" "Offer to the user to make selections on a file by file basis.")
-(defconst orgn--delete-file-query-zh-CN "Delete file?" "A query to show the user to see if they want to delete a file.")
-(defconst orgn--name-already-in-use-zh-CN "That name is already in use. Please try again" "Tell user the chosen name is already in use.")
-(defconst orgn--okay-zh-CN "Okay" "Positive acknowledgement to the user.")  ; This is also used to check that a language pack exists
-(defconst orgn--new-chapter-name-query-zh-CN "New Chapter Name?" "A query to the user for the new name of a chapter.")
-(defconst orgn--character-name-query-zh-CN "Character Name?" "A query to the user for what to name a character.")
-(defconst orgn--prop-name-query-zh-CN "Prop Name?" "A query to the user for what to name a prop.")
-(defconst orgn--place-name-query-zh-CN "Place Name?" "A query to the user for what to name a place.")
-(defconst orgn--new-character-name-query-zh-CN "New Character Name?" "A query to the user for the new name of a character.")
-(defconst orgn--new-prop-name-query-zh-CN "New Prop Name?" "A query to the user for the new name of a prop.")
-(defconst orgn--new-place-name-query-zh-CN "New Place Name?" "A query to the user for the new name of a place.")
-(defconst orgn--new-story-name-query-zh-CN "New Story Name?" "A query to the user for the new name for the story.")
-(defconst orgn--rename-story-folder-query-zh-CN "Rename story folder as well?" "A query to the user whether to also rename the story folder.")
-(defconst orgn--match-lang-tag-to-story-query-zh-CN "What language was used to create this story (eg, 'en-US')?" "A query to the user to change the session language tag.")
-(defconst orgn--story-folder-to-link-to-query-zh-CN "Story folder to link to current story?" "A query to the user for the story folder where a story to be linked is located.")
-(defconst orgn--unlink-from-which-story-query-zh-CN "Unlink from which story?" "A query to the user for which story to unlink from the current story.")
-;; Error/Throw/Messages
-(defconst orgn--function-name-zh-CN "function name" "Placeholder for the name of the function, used in generating error messages.")
-(defconst orgn--filename-zh-CN "filename" "Placeholder for the filename, used in generating error messages.")
-;; <<function name>> (without the << >> brackets) must share the same value as org-novelist--function-name-zh-CN.
-(defconst orgn--no-localised-function-zh-CN "No localized function found for <<function name>>" "The local language version of the function is missing.")
-;; <<filename>> (without the << >> brackets) must share the same value as org-novelist--filename-zh-CN.
-(defconst orgn--filename-is-not-writable-zh-CN "<<filename>> is not writable" "File is not writable.")
-(defconst orgn--story-folder-already-in-use-zh-CN "That story folder is already in use" "Tell user the selected folder already contains an Org Novelist story.")
-;; <<filename>> (without the << >> brackets) must share the same value as org-novelist--filename-zh-CN.
-(defconst orgn--filename-is-not-part-of-a-story-folder-zh-CN "<<filename>> is not part of an Org Novelist story folder" "Function run from location not appearing to be part of an Org Novelist story.")
-(defconst orgn--no-story-found-zh-CN "No story found" "No story found in folder.")
-;; <<filename>> (without the << >> brackets) must share the same value as org-novelist--filename-zh-CN.
-(defconst orgn--filename-is-not-readable-zh-CN "<<filename>> is not readable" "File is not readable.")
-(defconst orgn--new-chapter-created-zh-CN "New chapter created" "Throw out of chapter creation loop once chapter created. Not an error.")
-(defconst orgn--no-more-headings-zh-CN "No more headings" "Throw out of chapter creation loop as section heading not found. Not an error.")
-(defconst orgn--file-malformed-zh-CN "File malformed" "Throw out of chapter creation function as no top heading. Recoverable error.")
-(defconst orgn--file-not-found-zh-CN "File not found" "The requested file could not be found.")
-(defconst orgn--no-chapters-found-zh-CN "No chapters found" "No chapters found in story.")
-(defconst orgn--unsaved-buffer-zh-CN "Unsaved buffer" "Description of a buffer that is not saved to disk.")
-(defconst orgn--no-characters-found-zh-CN "No characters found" "No characters found in story.")
-(defconst orgn--no-props-found-zh-CN "No props found" "No props found in story.")
-(defconst orgn--no-places-found-zh-CN "No places found" "No places found in story.")
-;; <<filename>> (without the << >> brackets) must share the same value as org-novelist--filename-zh-CN.
-(defconst orgn--filename-is-not-a-recognised-index-zh-CN "<<filename>> is not a recognized index" "Index is not of a known type.")
-(defconst orgn--auto-ref-now-on-zh-CN "Org Novelist automatic referencing has been turned ON" "Inform user that automatic referencing has been turned on.")
-(defconst orgn--auto-ref-now-off-zh-CN "Org Novelist automatic referencing has been turned OFF" "Inform user that automatic referencing has been turned off.")
-(defconst orgn--language-tag-zh-CN "language tag" "Placeholder for the language code, used in generating error messages.")
-;; <<language tag>> (without the << >> brackets) must share the same value as org-novelist--language-tag-zh-CN.
-(defconst orgn--language-set-to-language-tag-zh-CN "Org Novelist language set to: <<language tag>>" "Inform user that language has been set.")
-(defconst orgn--language-not-found-zh-CN "Selected language pack not found." "Inform user that language pack could not be found.")
-(defconst orgn--chosen-story-same-as-current-story-zh-CN "Chosen story is the same as the current story." "Inform the user that they've selected the current story, instead of a new one.")
-(defconst orgn--folder-already-exists-zh-CN "That folder already exists" "Inform user the folder already exists.")
-(defconst orgn--no-linked-stories-zh-CN "Currently not linked to any stories" "Inform user there are currently no linked stories.")
-;; Pattern Matches
-(defconst orgn--sys-safe-name-zh-CN "[-A-Za-z0-9]*" "Regexp to match strings produced by `org-novelist--system-safe-name-zh-CN'.")
-(defconst orgn--aliases-separators-zh-CN "[,\f\t\n\r\v]+" "Regexp to match the separators in a list of aliases.")
-(defconst orgn--generate-separators-zh-CN orgn--aliases-separators-zh-CN "Regexp to match the separators in a list of generators.")
-(defconst orgn--notes-name-search-zh-CN "[[:space:][:punct:]]+?%s[[:space:][:punct:]]+?" "Regexp to match names of things in chapter files.")
-(defconst orgn--notes-name-org-link-search-zh-CN "\\[\\[:space:\\]\\[:punct:\\]\\]+?%s\\[\\[:space:\\]\\[:punct:\\]\\]+?" "Regexp to match, from an Org mode link, names of things in chapter files.")
+   "** 在故事中的角色\n"
+   "** 描述\n"
+   "** 背景\n"
+   "** 相关角色\n"
+   "** 季节\n"
+   "** 独特特征\n"
+   "** 景象\n"
+   "** 声音\n"
+   "** 气味\n"
+   "** 笔记\n")
+  "地点笔记文件的起始内容.")
+(defconst orgn--alias-zh-CN "别名" "术语表中别名部分的声明.")
+(defconst orgn--glossary-default-character-desc-zh-CN "故事中的一个角色." "故事中角色索引的默认描述.")
+(defconst orgn--glossary-default-place-desc-zh-CN "故事中的一个地点." "故事中地点索引的默认描述.")
+(defconst orgn--glossary-default-prop-desc-zh-CN "故事中的一个道具." "故事中道具索引的默认描述.")
+;; 用户查询
+(defconst orgn--story-name-query-zh-CN "故事名称？" "向用户询问故事名称的查询.")
+(defconst orgn--story-save-location-query-zh-CN "故事保存位置？" "向用户询问故事保存位置的查询.")
+(defconst orgn--chapter-name-query-zh-CN "章节名称？" "向用户询问章节名称的查询.")
+(defconst orgn--chapter-location-query-zh-CN "从\"%s\"的可用选项中选择章节位置（%s/%s/%s）：" "向用户询问新章节放置部分的查询.")
+(defconst orgn--rebuild-chapter-index-location-query-zh-CN "重建索引：章节应放在哪里？" "重建章节索引时，询问用户章节应放在哪里.")
+(defconst orgn--file-by-file-zh-CN "逐个文件选择" "向用户提供逐个文件选择的选项.")
+(defconst orgn--delete-file-query-zh-CN "删除文件？" "向用户询问是否删除文件的查询.")
+(defconst orgn--name-already-in-use-zh-CN "该名称已被使用，请重试." "告诉用户所选名称已被使用.")
+(defconst orgn--okay-zh-CN "好的" "向用户表示肯定的确认.")  ; 这也用于检查语言包是否存在
+(defconst orgn--new-chapter-name-query-zh-CN "新章节名称？" "向用户询问新章节名称的查询.")
+(defconst orgn--character-name-query-zh-CN "角色名称？" "向用户询问角色名称的查询.")
+(defconst orgn--prop-name-query-zh-CN "道具名称？" "向用户询问道具名称的查询.")
+(defconst orgn--place-name-query-zh-CN "地点名称？" "向用户询问地点名称的查询.")
+(defconst orgn--new-character-name-query-zh-CN "新角色名称？" "向用户询问新角色名称的查询.")
+(defconst orgn--new-prop-name-query-zh-CN "新道具名称？" "向用户询问新道具名称的查询.")
+(defconst orgn--new-place-name-query-zh-CN "新地点名称？" "向用户询问新地点名称的查询.")
+(defconst orgn--new-story-name-query-zh-CN "新故事名称？" "向用户询问新故事名称的查询.")
+(defconst orgn--rename-story-folder-query-zh-CN "同时重命名故事文件夹？" "向用户询问是否同时重命名故事文件夹的查询.")
+(defconst orgn--match-lang-tag-to-story-query-zh-CN "创建此故事时使用的语言是什么（例如，'en-US'）？" "向用户询问更改会话语言标签的查询.")
+(defconst orgn--story-folder-to-link-to-query-zh-CN "要链接到当前故事的故事文件夹？" "向用户询问要链接的故事所在文件夹的查询.")
+(defconst orgn--unlink-from-which-story-query-zh-CN "从哪个故事取消链接？" "向用户询问从当前故事取消链接的故事的查询.")
+;; 错误/抛出/消息
+(defconst orgn--function-name-zh-CN "函数名称" "函数名称的占位符，用于生成错误消息.")
+(defconst orgn--filename-zh-CN "文件名" "文件名的占位符，用于生成错误消息.")
+;; <<function name>>（不带<< >>括号）必须与org-novelist--function-name-zh-CN的值相同.
+(defconst orgn--no-localised-function-zh-CN "未找到<<function name>>的本地化函数" "缺少函数的本地语言版本.")
+;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-writable-zh-CN "<<filename>>不可写" "文件不可写.")
+(defconst orgn--story-folder-already-in-use-zh-CN "该故事文件夹已被使用" "告诉用户所选文件夹已包含Org Novelist故事.")
+;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-part-of-a-story-folder-zh-CN "<<filename>>不是Org Novelist故事文件夹的一部分" "从位置运行的函数似乎不是Org Novelist故事的一部分.")
+(defconst orgn--no-story-found-zh-CN "未找到故事" "文件夹中未找到故事.")
+;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-readable-zh-CN "<<filename>>不可读" "文件不可读.")
+(defconst orgn--new-chapter-created-zh-CN "新章节已创建" "章节创建循环完成后抛出.不是错误.")
+(defconst orgn--no-more-headings-zh-CN "没有更多标题" "未找到章节标题时抛出.不是错误.")
+(defconst orgn--file-malformed-zh-CN "文件格式错误" "没有顶部标题时抛出.可恢复的错误.")
+(defconst orgn--file-not-found-zh-CN "未找到文件" "未找到请求的文件.")
+(defconst orgn--no-chapters-found-zh-CN "未找到章节" "故事中未找到章节.")
+(defconst orgn--unsaved-buffer-zh-CN "未保存的缓冲区" "描述未保存到磁盘的缓冲区.")
+(defconst orgn--no-characters-found-zh-CN "未找到角色" "故事中未找到角色.")
+(defconst orgn--no-props-found-zh-CN "未找到道具" "故事中未找到道具.")
+(defconst orgn--no-places-found-zh-CN "未找到地点" "故事中未找到地点.")
+;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-a-recognised-index-zh-CN "<<filename>>不是可识别的索引" "索引不是已知类型.")
+(defconst orgn--auto-ref-now-on-zh-CN "Org Novelist自动引用已开启" "通知用户自动引用已开启.")
+(defconst orgn--auto-ref-now-off-zh-CN "Org Novelist自动引用已关闭" "通知用户自动引用已关闭.")
+(defconst orgn--language-tag-zh-CN "语言标签" "语言代码的占位符，用于生成错误消息.")
+;; <<language tag>>（不带<< >>括号）必须与org-novelist--language-tag-zh-CN的值相同.
+(defconst orgn--language-set-to-language-tag-zh-CN "Org Novelist语言已设置为：<<language tag>>" "通知用户语言已设置.")
+(defconst orgn--language-not-found-zh-CN "未找到所选语言包." "通知用户未找到语言包.")
+(defconst orgn--chosen-story-same-as-current-story-zh-CN "所选故事与当前故事相同." "通知用户他们选择了当前故事，而不是新故事.")
+(defconst orgn--folder-already-exists-zh-CN "该文件夹已存在" "通知用户文件夹已存在.")
+(defconst orgn--no-linked-stories-zh-CN "当前未链接到任何故事" "通知用户当前没有链接的故事.")
+;; 模式匹配
+(defconst orgn--sys-safe-name-zh-CN "[-A-Za-z0-9]*" "匹配由`org-novelist--system-safe-name-zh-CN'生成的字符串的正则表达式.")
+(defconst orgn--aliases-separators-zh-CN "[,\f\t\n\r\v]+" "匹配别名列表中分隔符的正则表达式.")
+(defconst orgn--generate-separators-zh-CN orgn--aliases-separators-zh-CN "用于匹配生成器列表中分隔符的正则表达式.")
+(defconst orgn--notes-name-search-zh-CN "[[:space:][:punct:]]+?%s[[:space:][:punct:]]+?" "用于匹配章节文件中名称的正则表达式.")
+(defconst orgn--notes-name-org-link-search-zh-CN "\\[\\[:space:\\]\\[:punct:\\]\\]+?%s\\[\\[:space:\\]\\[:punct:\\]\\]+?" "用于从 Org 模式链接中匹配章节文件中名称的正则表达式.")
 
 ;;;; Internationalised Functions
 
