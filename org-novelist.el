@@ -3066,9 +3066,9 @@ chapters to have a name, even if this will not be used on export."
               (progn
                 (with-temp-buffer
                   (insert-file-contents (concat story-folder / indices-folder / chapters-file))
-                  (goto-char (point-min))
+                  (goto-char (point-max))
                   (insert "\n")
-                  (goto-char (point-min))
+                  (goto-char (point-max))
                   (org-novelist-mode)
                   (orgn--fold-show-all)  ; Belts and braces
                   (when (not (org-next-visible-heading 1))
@@ -3324,9 +3324,9 @@ CHARACTER-NAME will be the name given to the character."
             (setq orgn-automatic-referencing-p orgn--autoref-p)
             (throw 'CHARACTER-CREATION-FAULT (concat (orgn--ls "name-already-in-use") ": " story-folder / notes-folder / character-file)))))
       (find-file (concat story-folder / indices-folder / characters-file))
-      (goto-char (point-min))
+      (goto-char (point-max))
       (insert "\n")
-      (goto-char (point-min))
+      (goto-char (point-max))
       (org-novelist-mode)
       (orgn--fold-show-all)  ; Belts and braces
       (when (not (org-next-visible-heading 1))
@@ -3340,7 +3340,7 @@ CHARACTER-NAME will be the name given to the character."
                   (org-insert-heading-respect-content)  ; Add the beginning of a new heading at the end of the current tree
                   (org-todo)  ; Turn heading into a TODO item
                   (setq insert-point (point))
-                  (goto-char (point-min))
+                  (goto-char (point-max))
                   (orgn--delete-line)
                   (goto-char (- insert-point 1)))
               ;; First entry.
@@ -3495,9 +3495,9 @@ PROP-NAME will be the name given to the prop."
             (setq orgn-automatic-referencing-p orgn--autoref-p)
             (throw 'PROP-CREATION-FAULT (concat (orgn--ls "name-already-in-use") ": " story-folder / notes-folder / prop-file)))))
       (find-file (concat story-folder / indices-folder / props-file))
-      (goto-char (point-min))
+      (goto-char (point-max))
       (insert "\n")
-      (goto-char (point-min))
+      (goto-char (point-max))
       (org-novelist-mode)
       (orgn--fold-show-all)  ; Belts and braces
       (when (not (org-next-visible-heading 1))
@@ -3511,7 +3511,7 @@ PROP-NAME will be the name given to the prop."
                   (org-insert-heading-respect-content)  ; Add the beginning of a new heading at the end of the current tree
                   (org-todo)  ; Turn heading into a TODO item
                   (setq insert-point (point))
-                  (goto-char (point-min))
+                  (goto-char (point-max))
                   (orgn--delete-line)
                   (goto-char (- insert-point 1)))
               ;; First entry.
@@ -3666,9 +3666,9 @@ PLACE-NAME will be the name given to the place."
             (setq orgn-automatic-referencing-p orgn--autoref-p)
             (throw 'PLACE-CREATION-FAULT (concat (orgn--ls "name-already-in-use") ": " story-folder / notes-folder / place-file)))))
       (find-file (concat story-folder / indices-folder / places-file))
-      (goto-char (point-min))
+      (goto-char (point-max))
       (insert "\n")
-      (goto-char (point-min))
+      (goto-char (point-max))
       (org-novelist-mode)
       (orgn--fold-show-all)  ; Belts and braces
       (when (not (org-next-visible-heading 1))
@@ -3682,7 +3682,7 @@ PLACE-NAME will be the name given to the place."
                   (org-insert-heading-respect-content)  ; Add the beginning of a new heading at the end of the current tree
                   (org-todo)  ; Turn heading into a TODO item
                   (setq insert-point (point))
-                  (goto-char (point-min))
+                  (goto-char (point-max))
                   (orgn--delete-line)
                   (goto-char (- insert-point 1)))
               ;; First entry.
