@@ -101,16 +101,16 @@
 ;; 文件前言
 (defconst orgn--story-name-zh-CN "故事名称" "故事名称的占位符，用于生成模板前言.")
 (defconst orgn--chapter-name-zh-CN "章节名称" "章节名称的占位符，用于生成模板前言.")
-;; <<story name>>（不带<< >>括号）必须与org-novelist--story-name-zh-CN的值相同.
-;; <<chapter name>>（不带<< >>括号）必须与org-novelist--chapter-name-zh-CN的值相同.
-(defconst orgn--notes-for-story-name-zh-CN "<<story name>>的笔记" "通用笔记文件前言的一部分.")
-(defconst orgn--notes-for-chapter-name-zh-CN "<<chapter name>>的笔记" "章节笔记文件前言的一部分.")
-(defconst orgn--research-for-story-name-zh-CN "<<story name>>的研究" "通用研究文件前言的一部分.")
-(defconst orgn--character-index-for-story-name-zh-CN "<<story name>>的角色索引" "角色索引文件前言的一部分.")
-(defconst orgn--place-index-for-story-name-zh-CN "<<story name>>的地点索引" "地点索引文件前言的一部分.")
-(defconst orgn--prop-index-for-story-name-zh-CN "<<story name>>的道具索引" "道具索引文件前言的一部分.")
-(defconst orgn--chapter-index-for-story-name-zh-CN "<<story name>>的章节索引" "章节索引文件前言的一部分.")
-(defconst orgn--linked-stories-index-for-story-name-zh-CN "<<story name>>的链接故事索引" "链接故事索引文件前言的一部分.")
+;;<<故事名称>>（不带<< >>括号）必须与org-novelist--story-name-zh-CN的值相同.
+;;<<章节名称>>（不带<< >>括号）必须与org-novelist--chapter-name-zh-CN的值相同.
+(defconst orgn--notes-for-story-name-zh-CN "<<故事名称>> 的笔记" "通用笔记文件前言的一部分.")
+(defconst orgn--notes-for-chapter-name-zh-CN "<<章节名称>> 的笔记" "章节笔记文件前言的一部分.")
+(defconst orgn--research-for-story-name-zh-CN "<<故事名称>> 的研究" "通用研究文件前言的一部分.")
+(defconst orgn--character-index-for-story-name-zh-CN "<<故事名称>> 的角色索引" "角色索引文件前言的一部分.")
+(defconst orgn--place-index-for-story-name-zh-CN "<<故事名称>> 的地点索引" "地点索引文件前言的一部分.")
+(defconst orgn--prop-index-for-story-name-zh-CN "<<故事名称>> 的道具索引" "道具索引文件前言的一部分.")
+(defconst orgn--chapter-index-for-story-name-zh-CN "<<故事名称>> 的章节索引" "章节索引文件前言的一部分.")
+(defconst orgn--linked-stories-index-for-story-name-zh-CN "<<故事名称>> 的链接故事索引" "链接故事索引文件前言的一部分.")
 (defconst orgn--front-matter-heading-zh-CN "前言" "书籍章节的前言名称，用作标题.")
 (defconst orgn--main-matter-heading-zh-CN "正文" "书籍章节的正文名称，用作标题.")
 (defconst orgn--back-matter-heading-zh-CN "后记" "书籍章节的后记名称，用作标题.")
@@ -122,30 +122,30 @@
 (defconst orgn--character-name-zh-CN "角色名称" "角色名称的占位符，用于生成模板前言.")
 (defconst orgn--prop-name-zh-CN "道具名称" "道具名称的占位符，用于生成模板前言.")
 (defconst orgn--place-name-zh-CN "地点名称" "地点名称的占位符，用于生成模板前言.")
-;; <<Notes>>（不带<< >>括号）必须与org-novelist--notes-zh-CN的值相同.
-;; <<chapter>>（不带<< >>括号）必须与org-novelist--chapter-zh-CN的值相同.
-;; <<story name>>（不带<< >>括号）必须与org-novelist--story-name-zh-CN的值相同.
-;; <<chapter name>>（不带<< >>括号）必须与org-novelist--chapter-name-zh-CN的值相同.
-;; <<character name>>（不带<< >>括号）必须与org-novelist--character-name-zh-CN的值相同.
-;; <<character>>（不带<< >>括号）必须与org-novelist--character-zh-CN的值相同.
-;; <<prop name>>（不带<< >>括号）必须与org-novelist--prop-name-zh-CN的值相同.
-;; <<prop>>（不带<< >>括号）必须与org-novelist--prop-zh-CN的值相同.
-;; <<place name>>（不带<< >>括号）必须与org-novelist--place-name-zh-CN的值相同.
-;; <<place>>（不带<< >>括号）必须与org-novelist--place-zh-CN的值相同.
-(defconst orgn--notes-are-available-for-this-chapter-from-story-name-zh-CN "<<Notes>>可用于<<story name>>中的<<chapter>>." "描述章节笔记可用性的句子.")
-(defconst orgn--notes-for-chapter-name-a-chapter-from-story-name-zh-CN "<<chapter name>>的笔记，<<story name>>中的<<chapter>>." "章节笔记模板的句子标题.")
-(defconst orgn--notes-for-character-name-a-character-from-story-name-zh-CN "<<character name>>的笔记，<<story name>>中的<<character>>." "角色笔记模板的句子标题.")
-(defconst orgn--notes-for-prop-name-a-prop-from-story-name-zh-CN "<<prop name>>的笔记，<<story name>>中的<<prop>>." "道具笔记模板的句子标题.")
-(defconst orgn--notes-for-place-name-a-place-from-story-name-zh-CN "<<place name>>的笔记，<<story name>>中的<<place>>." "地点笔记模板的句子标题.")
+;;<<笔记>>（不带<< >>括号）必须与org-novelist--notes-zh-CN的值相同.
+;;<<章节>>（不带<< >>括号）必须与org-novelist--chapter-zh-CN的值相同.
+;;<<故事名称>>（不带<< >>括号）必须与org-novelist--story-name-zh-CN的值相同.
+;;<<章节名称>>（不带<< >>括号）必须与org-novelist--chapter-name-zh-CN的值相同.
+;;<<角色名称>>（不带<< >>括号）必须与org-novelist--character-name-zh-CN的值相同.
+;;<<角色>>（不带<< >>括号）必须与org-novelist--character-zh-CN的值相同.
+;;<<道具名称>>（不带<< >>括号）必须与org-novelist--prop-name-zh-CN的值相同.
+;;<<道具>>（不带<< >>括号）必须与org-novelist--prop-zh-CN的值相同.
+;;<<地点名称>>（不带<< >>括号）必须与org-novelist--place-name-zh-CN的值相同.
+;;<<地点>>（不带<< >>括号）必须与org-novelist--place-zh-CN的值相同.
+(defconst orgn--notes-are-available-for-this-chapter-from-story-name-zh-CN "<<笔记>>可用于<<故事名称>>中的<<章节>>." "描述章节笔记可用性的句子.")
+(defconst orgn--notes-for-chapter-name-a-chapter-from-story-name-zh-CN "<<章节名称>>的笔记，<<故事名称>>中的<<章节>>." "章节笔记模板的句子标题.")
+(defconst orgn--notes-for-character-name-a-character-from-story-name-zh-CN "<<角色名称>>的笔记，<<故事名称>>中的<<角色>>." "角色笔记模板的句子标题.")
+(defconst orgn--notes-for-prop-name-a-prop-from-story-name-zh-CN "<<道具名称>>的笔记，<<故事名称>>中的<<道具>>." "道具笔记模板的句子标题.")
+(defconst orgn--notes-for-place-name-a-place-from-story-name-zh-CN "<<地点名称>>的笔记，<<故事名称>>中的<<地点>>." "地点笔记模板的句子标题.")
 (defconst orgn--content-header-zh-CN "内容" "章节文件前言的一部分.")
 (defconst orgn--scene-name-here-zh-CN "场景名称" "章节文件前言的一部分.")
 (defconst orgn--glossary-header-zh-CN "术语表" "章节文件中写作术语表的一部分.")
 (defconst orgn--view-notes-zh-CN "查看笔记" "让用户查看相关笔记的链接文本.")
 (defconst orgn--new-name-zh-CN "新名称" "别名字符串中新名称的占位符.")
 (defconst orgn--old-name-zh-CN "旧名称" "别名字符串中旧名称的占位符.")
-;; <<New name>>（不带<< >>括号）必须与org-novelist--new-name-zh-CN的值相同.
-;; <<old name>>（不带<< >>括号）必须与org-novelist--old-name-zh-CN的值相同.
-(defconst orgn--new-name-is-an-alias-for-old-name-zh-CN "<<New name>>是<<old name>>的别名." "让用户知道某物是别名的文本.")
+;; <<新名称>>（不带<< >>括号）必须与org-novelist--new-name-zh-CN的值相同.
+;; <<旧名称>>（不带<< >>括号）必须与org-novelist--old-name-zh-CN的值相同.
+(defconst orgn--new-name-is-an-alias-for-old-name-zh-CN "<<新名称>>是<<旧名称>>的别名." "让用户知道某物是别名的文本.")
 (defconst orgn--appearances-in-chapters-header-zh-CN "章节中的出现" "笔记文件引用部分的一部分.")
 (defconst orgn--line-zh-CN "行" "章节行的单词.用于句子的开头.")
 (defconst orgn--not-yet-referenced-zh-CN "尚未在故事中引用." "显示对象尚未在任何章节文件中提及.")
@@ -226,16 +226,16 @@
 ;; 错误/抛出/消息
 (defconst orgn--function-name-zh-CN "函数名称" "函数名称的占位符，用于生成错误消息.")
 (defconst orgn--filename-zh-CN "文件名" "文件名的占位符，用于生成错误消息.")
-;; <<function name>>（不带<< >>括号）必须与org-novelist--function-name-zh-CN的值相同.
-(defconst orgn--no-localised-function-zh-CN "未找到<<function name>>的本地化函数" "缺少函数的本地语言版本.")
-;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
-(defconst orgn--filename-is-not-writable-zh-CN "<<filename>>不可写" "文件不可写.")
+;; <<函数名称>>（不带<< >>括号）必须与org-novelist--function-name-zh-CN的值相同.
+(defconst orgn--no-localised-function-zh-CN "未找到<<函数名称>>的本地化函数" "缺少函数的本地语言版本.")
+;; <<文件名>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-writable-zh-CN "<<文件名>>不可写" "文件不可写.")
 (defconst orgn--story-folder-already-in-use-zh-CN "该故事文件夹已被使用" "告诉用户所选文件夹已包含Org Novelist故事.")
-;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
-(defconst orgn--filename-is-not-part-of-a-story-folder-zh-CN "<<filename>>不是Org Novelist故事文件夹的一部分" "从位置运行的函数似乎不是Org Novelist故事的一部分.")
+;; <<文件名>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-part-of-a-story-folder-zh-CN "<<文件名>>不是Org Novelist故事文件夹的一部分" "从位置运行的函数似乎不是Org Novelist故事的一部分.")
 (defconst orgn--no-story-found-zh-CN "未找到故事" "文件夹中未找到故事.")
-;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
-(defconst orgn--filename-is-not-readable-zh-CN "<<filename>>不可读" "文件不可读.")
+;; <<文件名>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-readable-zh-CN "<<文件名>>不可读" "文件不可读.")
 (defconst orgn--new-chapter-created-zh-CN "新章节已创建" "章节创建循环完成后抛出.不是错误.")
 (defconst orgn--no-more-headings-zh-CN "没有更多标题" "未找到章节标题时抛出.不是错误.")
 (defconst orgn--file-malformed-zh-CN "文件格式错误" "没有顶部标题时抛出.可恢复的错误.")
@@ -245,13 +245,13 @@
 (defconst orgn--no-characters-found-zh-CN "未找到角色" "故事中未找到角色.")
 (defconst orgn--no-props-found-zh-CN "未找到道具" "故事中未找到道具.")
 (defconst orgn--no-places-found-zh-CN "未找到地点" "故事中未找到地点.")
-;; <<filename>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
-(defconst orgn--filename-is-not-a-recognised-index-zh-CN "<<filename>>不是可识别的索引" "索引不是已知类型.")
+;; <<文件名>>（不带<< >>括号）必须与org-novelist--filename-zh-CN的值相同.
+(defconst orgn--filename-is-not-a-recognised-index-zh-CN "<<文件名>>不是可识别的索引" "索引不是已知类型.")
 (defconst orgn--auto-ref-now-on-zh-CN "Org Novelist自动引用已开启" "通知用户自动引用已开启.")
 (defconst orgn--auto-ref-now-off-zh-CN "Org Novelist自动引用已关闭" "通知用户自动引用已关闭.")
 (defconst orgn--language-tag-zh-CN "语言标签" "语言代码的占位符，用于生成错误消息.")
-;; <<language tag>>（不带<< >>括号）必须与org-novelist--language-tag-zh-CN的值相同.
-(defconst orgn--language-set-to-language-tag-zh-CN "Org Novelist语言已设置为：<<language tag>>" "通知用户语言已设置.")
+;; <<语言标签>>（不带<< >>括号）必须与org-novelist--language-tag-zh-CN的值相同.
+(defconst orgn--language-set-to-language-tag-zh-CN "Org Novelist语言已设置为：<<语言标签>>" "通知用户语言已设置.")
 (defconst orgn--language-not-found-zh-CN "未找到所选语言包." "通知用户未找到语言包.")
 (defconst orgn--chosen-story-same-as-current-story-zh-CN "所选故事与当前故事相同." "通知用户他们选择了当前故事，而不是新故事.")
 (defconst orgn--folder-already-exists-zh-CN "该文件夹已存在" "通知用户文件夹已存在.")
