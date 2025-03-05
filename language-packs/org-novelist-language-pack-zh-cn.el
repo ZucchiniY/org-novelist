@@ -195,14 +195,14 @@
   "角色笔记文件的起始内容.")
 (defconst orgn--prop-notes-content-zh-CN
   (concat
-   "** 在故事中的角色\n"
+   "** 在故事中的作用\n"
    "** 描述\n"
    "** 背景\n"
    "** 笔记\n")
   "道具笔记文件的起始内容.")
 (defconst orgn--place-notes-content-zh-CN
   (concat
-   "** 在故事中的角色\n"
+   "** 在故事中起到的作用\n"
    "** 描述\n"
    "** 背景\n"
    "** 相关角色\n"
